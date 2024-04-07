@@ -1,5 +1,4 @@
 import React from "react";
-import Constans from "../_utils/Constans";
 
 const Hero = () => {
   return (
@@ -7,12 +6,14 @@ const Hero = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex">
         <div className="mx-auto max-w-xl text-center">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
-            <span className="text-primary">Uplaod,</span> <span className="text-primary">Save</span> and Easily <span className="text-primary">Share</span> your files in one place.
-      
+            <span className="text-primary">Uplaod,</span>{" "}
+            <span className="text-primary">Save</span> and Easily{" "}
+            <span className="text-primary">Share</span> your files in one place.
           </h1>
 
           <p className="mt-4 sm:text-xl/relaxed">
-            {Constans.desc}
+            Drag on drop your file directory on our cloud share it with your
+            friends securely with password and send it on email
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">

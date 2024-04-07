@@ -6,8 +6,8 @@ import ProgressBar from "./ProgressBar";
 import Swal from "sweetalert2";
 
 const UploadForm = ({ uploadBtnClick, progress }) => {
-  const [file, setFile] = useState();
-  const [errorMsg, setErrorMsg] = useState();
+  const [file, setFile] = useState({});
+  const [errorMsg,  ] = useState("");
 
   const onFileSelect = (file) => {
     if (file && file.size > 2000000) {

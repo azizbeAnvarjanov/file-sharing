@@ -17,7 +17,7 @@ import { useRouter } from "next/navigation";
 
 const Upload = () => {
   const { user } = useUser();
-  const [progress, setProgress] = useState();
+  const [progress, setProgress] = useState(0);
   const storage = getStorage(app);
   const db = getFirestore(app);
   const route = useRouter();

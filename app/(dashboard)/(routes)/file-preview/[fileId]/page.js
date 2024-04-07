@@ -12,7 +12,7 @@ import Link from "next/link";
 const FilePreview = ({ params }) => {
   const { fileId } = params;
   const db = getFirestore(app);
-  const [file, setFile] = useState();
+  const [file, setFile] = useState({});
 
   useEffect(() => {
     fileId && getFileInfo();
